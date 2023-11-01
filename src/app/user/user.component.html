@@ -1,0 +1,19 @@
+<p>
+  <div>
+    <h1>
+      {{user.name}}
+    </h1>
+    <h3>
+      {{user.title}}
+      <p>
+        {{user.address}}
+      </p>
+      <div>
+        <p>
+          phone:
+        </p>
+        <p *ngFor="let phoneNumber of user.phone"> {{phoneNumber}}</p>
+      </div>
+    </h3>
+  </div>
+
